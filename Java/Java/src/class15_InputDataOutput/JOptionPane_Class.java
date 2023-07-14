@@ -2,6 +2,12 @@ package class15_InputDataOutput;
 
 import javax.swing.*;
 
+/**
+ * 
+ * @author LP-React
+ *
+ */
+
 public class JOptionPane_Class {
 
 	public static void main(String[] args) {

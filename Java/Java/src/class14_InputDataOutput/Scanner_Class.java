@@ -2,6 +2,12 @@ package class14_InputDataOutput;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author LP-React
+ *
+ */
+
 public class Scanner_Class {
 
 	public static void main(String[] args) {
