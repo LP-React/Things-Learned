@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  *
  */
 
-public class Ejercicio_For {
+public class Email_Checker_v1 {
 	public static void main(String[] args) {
 
 		boolean arroba = false;
@@ -34,6 +34,7 @@ public class Ejercicio_For {
 				JOptionPane.showMessageDialog(null, "Correo correcto");
 			} else {
 				JOptionPane.showMessageDialog(null, "Correo incorrecto, vuelve a intentarlo");
+				dot = false;
 			}
 
 		}
