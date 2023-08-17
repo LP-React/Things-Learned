@@ -27,7 +27,7 @@ public class Arrays_1 {
 		
 		// int my_array[] = {21,23,32,11,52};
 		
-		int my_array2[] = {2,5,12,75,23,52,22,15};
+		int my_array2[] = {2,5,12,75,23,52,22,15,23,12,67,33,92};
 		
 		for (int i = 0; i < my_array2.length; i++) {
 			System.out.println("Valor del índice " + i + " : " + my_array2[i]);
