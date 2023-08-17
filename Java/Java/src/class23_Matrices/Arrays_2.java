@@ -1,5 +1,11 @@
 package class23_Matrices;
 
+/**
+ * 
+ * @author LP-React
+ *
+ */
+
 public class Arrays_2 {
 	public static void main(String[] args) {
 		

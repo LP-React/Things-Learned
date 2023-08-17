@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
+/**
+ * 
+ * @author LP-React
+ *
+ */
+
 public class Factorial_calculator {
 
 	public static void main(String[] args) {

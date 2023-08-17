@@ -1,5 +1,11 @@
 package class24_Matrices;
 
+/**
+ * 
+ * @author LP-React
+ * 
+ */
+
 import javax.swing.JOptionPane;
 
 public class Using_ForEach {
