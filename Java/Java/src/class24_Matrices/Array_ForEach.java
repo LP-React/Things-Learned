@@ -2,6 +2,9 @@ package class24_Matrices;
 
 public class Array_ForEach {
 	public static void main(String[] args) {
+	
+	// En un for each, el "iterador" es una variable que tomara el valor de cada elemento en el array hasta el limite de esta.
+	// Entonces podriamos decir que el valor final de iterador es 9 en este caso.
 		
 	//-----------------------------------------------------------------------------------------------------
 		
