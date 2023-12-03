@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    FLEX BOX ES UN SHORTHAND DE LOS DOS */
+    flex-flow: row nowrap;
+    width: 502px;
+    height: 70vh;
+    margin: 20px auto;
+    border: 1px solid black;
+    /* Justify-content = el eje principal 
+       Align-Items = eje secundario
+       Align-content = eje secundario / todos los items*/
+    justify-content: space-between;
+}
+.container__element{
+    flex: 1 0 100px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    color: aliceblue;
+    order: 0;
+}
+.item1{
+    background-color: lightcoral;
+    /* Align-self = Solo un item eje secundario */
+    align-self: center;
+}
+.item2{
+    background-color: rgb(31, 212, 212);
+    align-self: flex-end;
+}
+.item3{
+    background: lightgreen;
+}
+.item4{
+    background: lightsalmon;
+}

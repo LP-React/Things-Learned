@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 450px;
+    height: 1550px;
+    margin: 20px auto;
+    border: 5px solid crimson;
+    position: relative;
+}
+.box {
+    background: steelblue;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px 0px 20px ;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+}
+.static{
+    position: relative;
+}
+.relative{
+    background: crimson;
+    position: relative;
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
+    z-index: 200;
+}
+.absolute{
+    background: purple;
+    position: absolute;
+    left: 30px;
+    top: 130px;
+    margin: 0;
+    z-index: 199;
+}
+.fixed {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 800;
+    transition: 0.7s;
+}
+.fixed a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .7s;
+}
+.fixed:hover>a {
+    transition: .7s;
+    text-decoration: underline;
+    font-size: 26px;
+}
+.fixed:hover {
+    background-color: aliceblue;
+    transition: .7s;
+}

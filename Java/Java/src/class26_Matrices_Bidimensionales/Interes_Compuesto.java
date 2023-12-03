@@ -20,51 +20,58 @@ public class Interes_Compuesto {
 		tabla[0][3] = 0.11;
 		tabla[0][4] = 0.12;
 
-		double inicial = Double.parseDouble(JOptionPane.showInputDialog("Inserta tu ahorro inicial"));
+		double ahorro_Inicial = Double.parseDouble(JOptionPane.showInputDialog("Inserta tu ahorro inicial"));
 
-		for (int i = 0; i < 5; i++) {
+		System.out.println();
+		
+		for (int fila = 0; fila < 5; fila++) {
 
-			System.out.println("----------------------------------------------------");
-			System.out.println();
+			System.out.println("       ----------------------------------------------------");
+			System.out.println("       |          |         |         |         |         |");
 
-			for (int j = 0; j < 5; j++) {
+			for (int columna = 0; columna < 5; columna++) {
 
-				switch (i) {
+				switch (fila) {
+				
 				case 1:
-					tabla[i][j] = inicial;
+					tabla[fila][columna] = ahorro_Inicial;
 					break;
+					
 				case 2: 
-					tabla[i][j] = (tabla[i - 1][j] * tabla[i - 2][j]) + tabla[i - 1][j];
+					tabla[fila][columna] = (tabla[fila - 1][columna] * tabla[fila - 2][columna]) + tabla[fila - 1][columna];
 					break;
+					
 				case 3:
-					tabla[i][j] = (tabla[i - 1][j] * tabla[i - 3][j]) + tabla[i - 1][j];
+					tabla[fila][columna] = (tabla[fila - 1][columna] * tabla[fila - 3][columna]) + tabla[fila - 1][columna];
 					break;
+					
 				case 4:
-					tabla[i][j] = (tabla[i - 1][j] * tabla[i - 4][j]) + tabla[i - 1][j];
+					tabla[fila][columna] = (tabla[fila - 1][columna] * tabla[fila - 4][columna]) + tabla[fila - 1][columna];
 					break;
+					
 				case 5:
-					tabla[i][j] = (tabla[i - 1][j] * tabla[i - 5][j]) + tabla[i - 1][j];
+					tabla[fila][columna] = (tabla[fila - 1][columna] * tabla[fila - 5][columna]) + tabla[fila - 1][columna];
 					break;
 
 				}
 
-				if (j == 0) {
-					System.out.print("|  ");
+				if (columna == 0) {
+					System.out.print("       |  ");
 				}
 
-				if (i == 0) {
+				if (fila == 0) {
 					System.out.print(" ");
 				}
 
-				System.out.printf("%1.2f ", tabla[i][j]);
+				System.out.printf("%1.2f ", tabla[fila][columna]);
 				System.out.print("  | ");
 			}
 
 			System.out.println();
-			System.out.println();
+			System.out.println("       |          |         |         |         |         |");
 
-			if (i == 4) {
-				System.out.println("----------------------------------------------------");
+			if (fila == 4) {
+				System.out.println("       ----------------------------------------------------");
 			}
 		}
 	}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.enlace {
+    display: block;
+    background: gray;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid black;
+    margin: 12px 0px;
+}
+/* Para links q no han sido visitados */
+.enlace:link {
+    color: red;
+    background: yellow;
+}
+/* Para links que ya fueron visitados */
+.enlace:visited {
+    background: crimson;
+}
+.enlace:hover {
+    background: green;
+    padding: 30px;
+    transition: 0.8s;
+}
+.enlace:active {
+    background: steelblue;
+    transition: 5s;
+}
+div a {
+    display: block;
+    margin: 5px;
+    padding: 20px;
+    background: steelblue;
+    color: white;
+}
+#mesa:target {
+    padding: 40px;
+    margin: 80px;
+}
+
+/* .banner {
+    display: block;
+    background: rgb(158, 158, 158);
+    height: 500px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 0.1px;
+}
+.imagen1 {
+    display: inline-block;
+    border: 0.1 solid;
+    width: 80px;
+    padding: 20px ;
+    background: rgb(0, 183, 255);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+.imagen2 {
+    display: inline-block;
+    width: 80px;
+    padding: 20px ;
+    background: rgb(0, 183, 255);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 800px;
+}
+#objectw {
+    margin-left: 43px;
+    display: block;
+    height: 130px;
+    width: 130px;
+    background: rgb(47, 212, 190);
+    transition: 0.8s;
+}
+#objectw:target {
+    background: rgb(214, 47, 230);
+    transition: 0.8s;
+    margin-left: 1020px;
+}
+ */
+:root {
+    transition: 5s;
+    background: steelblue;
+}
+ .form {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.295);
+    padding: 30px;
+ }
+ .form_tittle {
+    text-align: center;
+    margin-bottom: 20px;
+
+ }
+ input {
+    display: block;
+ }
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+ 
+ input[type="checkbox"] {
+    display: inline-block;
+ }
+
+ input:focus {
+    color: white;
+    background: rgba(255, 255, 255, 0.705);
+    transition: 0.4s;
+ }
+ input[type="checkbox"]:checked + label{
+    background: aliceblue;
+ }
+ .form:focus-within {
+    transition: .5s;
+    background: darkcyan;
+ }
+
+ h3 {
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    font-size: 3rem;
+ }
+
+ h3:not(:hover) {
+    color: crimson;
+ }

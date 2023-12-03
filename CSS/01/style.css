@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: darkslategray;
+}
+nav {
+    background-color: black;
+}
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0 50px;
+}
+
+
+.box1 {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    margin: 0px;
+    padding-top: 0.1px;
+}
+.header {
+    background-color: gold;
+    height: 10px;
+    margin-top: 10px;
+}
+.box2 {
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(183, 143, 235);
+    width: 400px;
+    height: 250px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 4px dotted indigo;
+    color: rgb(165, 219, 15);
+    font-family: sans-serif;
+}
+h1 {
+    font-size: inherit;
+    text-align: center;
+    color: initial;
+    font-family: initial;
+    border: inherit;
+    padding: inherit;
+
+}
+.box3 {
+    background-color: maroon;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border: 2px solid yellow;
+    box-sizing: border-box;
+    opacity: 0.4;
+}

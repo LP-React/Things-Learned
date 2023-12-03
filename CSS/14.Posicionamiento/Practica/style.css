@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Playpen Sans', cursive;
+}
+.hero{
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 80%),
+    url(https://images6.alphacoders.com/819/819005.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0.1px;
+    position: relative;
+}
+.container-text{
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 250px auto;
+ 
+}
+.container-text h1 {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 8px black;
+    letter-spacing: 6px;
+    border-bottom: 3px solid white;
+    padding: 10px 90px 2px;
+}
+.container-text p {
+    font-size: 0.4rem;
+    letter-spacing: 17px;
+    margin: 10px 0px 16px;
+}
+.container-text a{
+    display: inline-block;
+    padding: 14px 25px;
+    background: rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+    font-size: 0.2rem;
+}
+.container-text a:hover{
+    transition: .4s;
+    background: rgba(0, 0, 0, 0.575);
+}
+.wave {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 1400px;
+}
