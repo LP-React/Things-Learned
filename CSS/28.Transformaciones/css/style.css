@@ -1,0 +1,57 @@
+body {
+    background-color: #f1f1f1;
+}
+.container {
+    height: 75dvh;
+    width: 85%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*    Valores de transform:
+    
+    translateX() + translateY() = translate(x, y);
+    scaleX() + scaleY()  = scale(x, y)
+    rotateX() + rotateY() = rotate(x, y)
+
+    Medida para transform: 
+
+    grados: 0-360deg
+    radians: 0-6.28319rad
+    gradians: 0-400grad
+    turn: 0-1turn ( una vuelta 360°)
+
+    Valores para transform-origin: 
+
+    top - bottom - right - left - center
+    Puedes combinar estos valores
+
+*/
+
+.element {
+    background-color: #69bda4;
+    width: 150px;
+    height: 150px;
+    margin: 0px 80px;
+    transition: 1s;
+}
+.element--scale {
+    transform: scale(1);
+}
+.container:hover .element--scale {
+    transform: scale(1.2);
+}
+.element--translate {
+    transform: translate(0px, -25px);
+}
+.container:hover .element--translate {
+    transform: translate(0px, 50px);
+}
+.element--rotate {
+    transform: rotate(0);
+}
+.container:hover .element--rotate {
+    transform: rotate(.5turn);
+}

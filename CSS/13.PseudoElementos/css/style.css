@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(246, 237, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 350px;
+    margin: 240px auto 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -20px -20px 0px 0px rgba(255, 255, 255, 0.342);
+}
+
+.card_tittle {
+    border-bottom: 3px solid rgb(162, 114, 250);
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+}
+
+p::selection {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+p::first-line {
+    color: crimson;
+}
+
+.card_tittle::first-letter {
+    color: rgb(188, 117, 255);
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 20px;
+    background: rgb(51, 51, 51);
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(98, 1, 177);
+}
+
+input::placeholder {
+    color: white;
+    font-size: 1px;
+}
+
+.card_text::before {
+    content: "TEXT BEFORE";
+    color: rgb(108, 68, 202);
+}
+
+.card_text::after {
+    content: "TEXT AFTER";
+    display: block;
+    width: 100%;
+    background: rgb(227, 212, 255);
+    margin: 20px auto;
+    color: white;
+}
+
+ul {
+    counter-reset: contador;
+    padding: 0px;
+    list-style: none;
+}
+
+li::before {
+    display: inline-block;
+    content: counter(contador);
+    counter-increment: contador;
+    background: rgb(201, 186, 255);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}

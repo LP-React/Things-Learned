@@ -1,0 +1,43 @@
+
+.title {
+    text-align: center;
+    margin: 130px 0 40px;
+    font-family: 'Inter';
+    font-weight: 300;
+}
+.container__types {
+    display: grid;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 35px 25px;
+}
+.type {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-family: 'Inter';
+    background-color: rgb(69, 202, 180);
+
+}
+.type--circle {
+    clip-path: circle(40%);
+}
+.type--ellipse {
+    clip-path: ellipse(45% 20%);
+}
+.type--inset {
+    clip-path: inset(30% 10%);
+}
+.type--polygon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition: .5s;
+}
+.type--polygon:hover {
+    clip-path: polygon(0 38%, 50% 0%, 100% 38%, 82% 100%, 18% 100%);
+}

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.welcome {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) ,  rgba(0, 0, 0, 0.61)), 
+    url(../assets/bg.jpg);
+    background-attachment: fixed;
+    padding: 0.1px
+}
+.welcome h1 {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    padding: 20px;
+    margin: calc(50vh - 100px) auto;
+    color: white;
+    background: transparent;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.info {
+    display: block;
+    padding: 80px 50px;
+    text-align: center;
+}
+.info h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+.info p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    margin: 40px 0px 30px;
+}
+.footer {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.473)),
+    url("../assets/bg2.webp");
+    background-attachment: fixed;
+    padding: 0.1px;
+}
+.footer h3 {
+    display: block;
+    text-align: center;
+    color: white;
+    margin: calc(50vh - 100px) auto 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 200;
+    font-size: 3rem;
+    padding: 20px;
+}
+.copy{
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 200;
+    font-size: 0.1rem;
+    padding: 8px;
+    background:black;
+}

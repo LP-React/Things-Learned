@@ -1,0 +1,13 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    background-image: linear-gradient(  rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) ) ,url(../assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto 00px;
+}

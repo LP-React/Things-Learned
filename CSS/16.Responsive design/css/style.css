@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: crimson;
+}
+body {
+    display: flex;
+    min-height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+body::after {
+    content: 'Hello, press the keys : \a Ctrl + Shift + C ';
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+/* Media al momento de imprimir */
+@media print{
+    body::after {
+        content: 'Hello again, this is a @media print';
+    }
+}
+@media screen and (max-width:1800px) {
+    body::after{
+        content: 'Now, the @media is under 1800px. \a Continues to reduce the display width';
+    }
+}
+@media screen and (max-width:1500px) {
+    body::after{
+        content: 'Please, now set the display to portrait mode';
+        font-size: 2rem;
+    }
+}
+/* Orientacion de la pantalla
+    orientation:landscape
+    orientation:portrait
+*/
+@media screen and (orientation:portrait){
+    body::after{
+        content: 'This is a @media screen with orientation portrait \a Now, reduces the display height';
+    }
+}
+/* and == && */
+@media screen and (max-height: 800px) and (max-width:500px){
+    body::after{
+        content: 'This is a condition AND between height 800px nad width 500px';
+    }
+}
+/* , == OR  */

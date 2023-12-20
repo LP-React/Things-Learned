@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+nav {
+    background-color: rgb(75, 150, 127);
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-size: 1.3rem;
+}
+.box2 {
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(187, 235, 215);
+    width: 400px;
+    height: 250px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 2px dotted rgb(4, 73, 50);
+    color: rgb(53, 53, 53);
+    font-family: sans-serif;
+}
+
+.box3 {
+    background-color: rgb(1, 167, 125);
+    padding: 10px 0px;
+    width: 300px;
+    margin: auto;
+    border: 2px solid rgb(0, 104, 78);
+    box-sizing: border-box;
+    opacity: 0.4;
+    text-align: center;
+    font-size: 1.5rem;
+}

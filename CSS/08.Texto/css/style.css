@@ -1,0 +1,41 @@
+div {
+    height: 500px;
+    width: 800px;
+    background-image: linear-gradient(rgba(52, 86, 158, 0.096),rgb(0, 0, 0)),
+    url(../assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 25px;
+
+    margin: 100px auto;
+}
+h1 {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 15px 10px;
+    border-bottom: 4px solid;
+}
+p {
+    margin: 30px 4px 0px;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 50px;
+    word-spacing: 10px;
+    padding: 0px 95px 0px 4px;
+}
+a {
+    display: inline-block;
+    color: white;
+    border-radius: 15px;
+    margin:20px 0px;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px 30px;
+    border: 4px solid white;
+}

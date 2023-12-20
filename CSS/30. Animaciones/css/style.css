@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+}
+/* 
+    animation: name duration timing-function delay iteration-count direction;
+*/
+.box {
+    width: 600px;
+    height: 350px;
+    background-color: rgb(255, 226, 221);
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(61, 61, 61);
+    animation: bg 1s infinite linear alternate;
+}
+@keyframes bg {
+    100% {
+        background-color: rgb(255, 179, 165);
+    }
+}
+.item {
+    width: 200px;
+    height: 250px;
+    animation-name: moveItem;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    transform-origin: bottom;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@keyframes moveItem {
+    0% {
+        transform: rotate(0deg) translateY(80px);
+    }
+    30% {
+        transform: rotate(10deg) translateY(60px);
+    }
+    70% {
+        transform: rotate(-10deg) translateY(60px);
+    }
+    100% {
+        transform: rotate(0deg) translateY(80px);
+    }
+}

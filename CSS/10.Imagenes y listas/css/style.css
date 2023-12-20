@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section h2 {
+    margin: 50px 0px;
+    font-size: 40px;
+    border-bottom: 4px solid rgb(61, 61, 61);
+    padding-bottom: 20px;
+}
+.content img{
+    object-fit: cover;
+    width: 30%;
+    height: 600px;
+    margin: 0px 1.5% 20px 1.5%;
+}

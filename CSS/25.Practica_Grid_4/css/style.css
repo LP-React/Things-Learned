@@ -1,0 +1,39 @@
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.title::after {
+    display: block;
+    content: "";
+    width: 180px;
+    height: 4px;
+    margin-top: 5px;
+    background-color: rgb(56, 152, 165);
+}
+.gallery__grid {
+    display: grid;
+    padding: 50px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

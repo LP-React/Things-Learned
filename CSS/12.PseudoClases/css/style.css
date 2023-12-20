@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 240, 240);
+}
+nav {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0px 0px;
+}
+
+.enlace {
+    display: inline-block;
+    background: gray;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid black;
+    margin: 12px 40px 100px;
+    transition: .3s;
+}
+
+/* Para links q no han sido visitados */
+.enlace:link {
+    color: blue;
+    background: yellow;
+}
+
+/* Para links que ya fueron visitados */
+.enlace:visited {
+    background: rgb(255, 111, 111);
+}
+
+.enlace:hover {
+    background: rgb(255, 57, 57);
+    padding: 10px 25px;
+}
+
+.enlace:active {
+    background: rgb(37, 37, 37);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.1px;
+}
+.container__move {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column wrap;
+    outline: 2px solid;
+    background-color: rgb(255, 255, 255);
+}
+.button {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.button a {
+    margin: 5px;
+    padding: 20px;
+    background: rgb(112, 121, 129);
+    color: white;
+}
+.container__item {
+    width: 75%;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    transition: 1s;
+}
+.item:target {
+    margin-left: 280px;
+}
+
+
+.form {
+    width: 400px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.295);
+    padding: 30px;
+}
+
+.form_tittle {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0px 30px;
+}
+input {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin: 20px 0px;
+    display: inline-block;
+}
+
+input:focus {
+    color: white;
+    background: rgba(255, 255, 255, 0.705);
+    transition: 0.4s;
+}
+
+input[type="checkbox"]:checked+label {
+    background: aliceblue;
+}
+
+.form:focus-within {
+    transition: .5s;
+    background: rgb(255, 98, 98);
+}
